@@ -14,7 +14,13 @@ const Card = ({ el }) => {
         }}
         style={{backgroundColor:'rgb(167, 196, 233)',width:250,marginTop:80,marginLeft:500}}
       >
-        <h6>{el.map(el=>el.date)}</h6>
+        <div className='card'> 
+        <h6>{el.location&&el.location.name}</h6>
+        <h6>{el.location&&el.location.country}</h6>
+        <h6>{el.current&&el.current.last_updated}</h6>
+        <h6>{el.current&&el.current.temp_c}</h6>
+        <h6>{el.current&&el.current.condition&&el.current.condition.text}</h6>
+        </div>
       </motion.div>
 
     </div>
