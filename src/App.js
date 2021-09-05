@@ -1,4 +1,5 @@
 
+import 'semantic-ui-css/semantic.min.css';
 import './App.css';
 import Wheather from './components/Wheather';
 
@@ -6,7 +7,7 @@ function App() {
   return (
     <div className="App">
      <Wheather/>
-
+  
      </div>
   );
 }
