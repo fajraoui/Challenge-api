@@ -5,10 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('https://skyandtelescope.org/wp-content/uploads/Seronik-Orion-setting.jpg') !important;
-  background-repeat: no-repeat !important;
-  background-size:cover !important;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

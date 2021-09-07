@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100');
+
+.App {
+  
+  animation: changeBackgroundImage 13s infinite;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes changeBackgroundImage {
+  0% {
+    background-image: url('https://picsum.photos/id/1015/1500/1000');
+  }
+  25% {
+    background-image: url('https://picsum.photos/id/1019/1500/1000');
+  }
+  50% {
+    background-image: url('https://picsum.photos/id/1016/1500/1000');
+  }
+  75% {
+    background-image: url('https://picsum.photos/id/1000/1500/1000');
+  }
+  100% {
+    background-image: url('https://picsum.photos/id/1015/1500/1000');
+  }
+}

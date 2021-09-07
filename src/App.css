@@ -1,8 +1,9 @@
 .App {
   text-align: center;
-}
+  
+	}
 h1{
-  color:rgb(79, 12, 82) ;
+  color:rgb(72, 32, 136) ;
   font-family:cursive;
 }
 h3{
@@ -14,12 +15,119 @@ h2{
   color: rgb(110, 94, 126);
   font-family: cursive;
 }
-.card{
-  margin-top: 110px;
+h6{
+  color:rgb(78, 78, 131) ;
+}
+.temp{
   font-variant: small-caps;
   font-style: italic;
+ 
+}
+.cardt{
+  background-image: url('https://images.unsplash.com/photo-1618729300169-30ac66a34e08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxDOWN1dlRncXQ0NHx8ZW58MHx8fHw%3D&w=1000&q=80');
+  width:  150px;
+  margin-left: 500px;
+  margin-top: 170px;
+  border-radius: 20px;
+  opacity: 0.7;
+}
+.footer{
+  margin-top: 100px;
+  margin-bottom: 200px;
+  width: 100%;
+  height: 70px;
+  background-color:rgb(123, 179, 231);
+
+}
+.card2{
+  width: 200px;
+  height:400;
+  border-radius: 10px;
+  background-image: url('https://media.istockphoto.com/photos/view-on-a-evening-purple-sky-with-cirrus-clouds-and-stars-picture-id1144142614?k=20&m=1144142614&s=612x612&w=0&h=GJYkVXRMkmGtEMNmwQtVBMueH_nFWSJIKs5Wq9eASMw=');
+  opacity: 0.5;
+}
+.card2 h4{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color:rgb(20, 18, 20)
+}
+.card3{
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+  margin-top: 150px;
+}
+.details{
+  width:300px ;
+  height:max-content ;
+  background-color: rgb(217, 221, 230);
+  margin-left: 300px;
 }
 
+.details h4{
+  font-family: 'Times New Roman', Times, serif;
+  color:rgb(89, 46, 109);
+}
+.table{
+  margin-left: 100px;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  margin: -150px;
+  float: left;
+  perspective: 500px;
+ 
+}
+
+.content {
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(184, 220, 230);
+  line-height: 300px;
+  color: #03446A;
+  text-align: center;
+  font-size: 60px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  background-image:url('https://i.imgur.com/W3tra4F.gif');
+  z-index:1;
+  box-shadow: 5px 5px 5px #aaa;
+}
+
+.back {
+  background-image:url('https://i.imgur.com/W3tra4F.gif');
+  z-index:1;
+  box-shadow: 5px 5px 5px #aaa;
+  color: white;
+  transform: rotateY( 180deg );
+  height: 1050px;
+
+}
+.A{
+  width:800px;
+  height: 1100px;
+}
 
 
 

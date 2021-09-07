@@ -78,14 +78,15 @@ export default function SearchAppBar() {
     
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-                 <h1>WHEATHER APPLICATION</h1>
-          </Typography>
-          <Typography className={classes.title} variant="h6" noWrap>
             <h3>Wish you a nice day</h3>
           </Typography>
+          <Typography className={classes.title} variant="h6" noWrap>
+                 <h1>Be always happy</h1>
+          </Typography>
           
+          <Rate/>
         </Toolbar>
-        <Rate/>
+        
       </AppBar>
     </div>
   );

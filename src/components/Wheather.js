@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getWheather } from "../redux/actions/action";
-import Navbar from "./Navbar";
+
 import Loading from "./Loading";
+import {Button, Input } from "semantic-ui-react";
 import Card from "./Card";
-import { Input } from "semantic-ui-react";
+import Forecast from "./Forecast"
+import { Link } from "react-router-dom";
 
 const Wheather = () => {
   const dispatch = useDispatch();
@@ -15,7 +17,7 @@ const Wheather = () => {
   useEffect(() => {
     dispatch(getWheather(query));
   }, [query]);
-
+   
   return (
     <div>
       {loading ? (
@@ -24,7 +26,7 @@ const Wheather = () => {
         </div>
       ) : (
         <div>
-          <Navbar />
+          
           <div>
           <h2>Enter your position</h2>
           <Input
@@ -33,10 +35,11 @@ const Wheather = () => {
             placeholder="Search..."
           />
           </div>
+          
           <Card
             el={cityWheather}
-          />
-          
+          /> 
+          <Forecast data={cityWheather}/>
         </div>
       )}
     </div>
